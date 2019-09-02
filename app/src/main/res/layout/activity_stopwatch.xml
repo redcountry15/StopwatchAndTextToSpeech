@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    tools:context=".Stopwatch">
+
+
+    <TextView
+        android:id="@+id/TextViewStopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="@color/colorPrimary"
+        android:text="00:00:00"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:elevation="12dp"
+        android:background="#8EF191"
+        android:textColor="#424141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mulai"
+        android:layout_below="@id/TextViewStopwatch"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/btnMulai"
+        />
+
+    <Button
+        android:elevation="12dp"
+        android:background="#8EF191"
+        android:textColor="#424141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnMulai"
+        android:layout_alignBottom="@id/btnMulai"
+        android:layout_centerHorizontal="true"
+        android:text="Berhenti"
+        android:id="@+id/btnBerhenti"
+        />
+    <Button
+        android:elevation="12dp"
+        android:background="#8EF191"
+        android:textColor="#424141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnBerhenti"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnReset"
+        android:text="Reset"
+        />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:textColor="#fff"
+        android:background="#EC4848"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMulai"
+        android:layout_margin="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Simpan "
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnSimpan"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:id="@+id/Lv1"
+        />
+
+
+
+</RelativeLayout>
